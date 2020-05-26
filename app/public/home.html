@@ -6,26 +6,68 @@
     <title>Friend Finder</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <a class="navbar-brand">Friend Finder</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse float-right " id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item active float-right">
+              <a class="nav-link float-right" href="/survey">Survey</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/api/friends">Friends List</a>
+            <li class="nav-item  float-right">
+              <a class="nav-link" href="/api/friends" target ="blank">Friends List</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/ASuicidalCow/FriendFinder">GitHub</a>
+            <li class="nav-item float-right">
+              <a class="nav-link float-right" href="https://github.com/ASuicidalCow/FriendFinder" target ="blank">GitHub</a>
             </li>
+          </ul>
+          </div>
   </header>
+  <main>
+    <div class="jumbotron text-center bg-light">
+        <div class="row">
+            <div class="col md ">
+                <div id="main-content">
+                    <h1>Friend Finder</h1>
+                    <h1>Click the button to do find a compatible friend</h1>
+                    <a href="/survey">
+                        <button type="button" class="btn-info btn-large" target ="blank">Start</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col lg ">
+                <h1 class="">Friend Finder App</h1>
+                <h2 class="text-dark">Thanks for taking this survey!</h2>
+            </div>
+            <footer>
+            <div>
+                <h5 class="">Links</h5>
+                <ul>
+                    <li><a class=" bg-light text-dark" href="/api/friends" target="blank">API Friends List</a></li>
+                    <li><a class=" bg-light text-dark" href="https://github.com/ASuicidalCow/FriendFinder" target="blank">GitHub Repo</a></li>
+                </ul>
+            </div>
+        </footer>
+        </div>
+    </div>
     
 </body>
 </html>
